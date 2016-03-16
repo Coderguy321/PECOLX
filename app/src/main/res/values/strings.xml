@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PECOLX</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_signup">signup</string>
+    <string name="title_activity_sidebar">sidebar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
