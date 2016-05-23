@@ -9,7 +9,10 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class HttpManager {
+/**
+ * Created by avi on 24-Apr-16.
+ */
+public class HttpManager_post {
 
     public static String getData(RequestPackage requestPackage)
     {
@@ -18,13 +21,13 @@ public class HttpManager {
         if (requestPackage.getMethod().equals("GET")) {
             uri += "?" + requestPackage.getEncodedParams();
         }
-        Log.d("Url",uri);
+        Log.d("Url", uri);
         try {
             URL url = new URL(uri);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod(requestPackage.getMethod());
 
-            if(requestPackage.getMethod().equals("GET")){
+            if(requestPackage.getMethod().equals("POST")){
                 connection.setDoOutput(true);
                 OutputStreamWriter outputStreamWriter = new OutputStreamWriter(connection.getOutputStream());
                 outputStreamWriter.write(requestPackage.getEncodedParams());

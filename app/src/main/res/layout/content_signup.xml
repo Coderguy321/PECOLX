@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,28 +10,100 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:background="#0BB990"
     tools:context="com.example.avi.pecolx.signup"
     tools:showIn="@layout/activity_signup">
 
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:id="@+id/username"/>
     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/nameText"
+        android:layout_below="@+id/username"/>
+    <TextView
+        android:layout_below="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+
+        android:id="@+id/Contact"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact"
+        android:id="@+id/contactText"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Contact"
+        android:paddingBottom="15dp"
+        android:inputType="phone"/>
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:id="@+id/image1"
+
+        android:layout_below="@+id/contactText"
+        android:background="#938f8f" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:text="Captcha"
+        android:id="@+id/captcha"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Captcha here"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/captcha"
+        android:id="@+id/captchatext" />
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:text="name"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="79dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button" />
+        android:text="Password"
+        android:layout_below="@+id/nameText"
+        android:id="@+id/passText"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pass1"
+        android:layout_below="@+id/passText" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        android:layout_below="@+id/pass1"
+        android:id="@+id/cpass"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pass"
+        android:layout_below="@+id/cpass" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="registration"
-        android:text="sign up"
-        android:id="@+id/button"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-</RelativeLayout>
+        android:text="SIGN UP"
+        android:id="@+id/signupbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/captchatext"
+        android:onClick="registration"/>
+    </RelativeLayout>
+
+</ScrollView>
+
