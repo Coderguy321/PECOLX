@@ -1,37 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aman.pecolx">
+    <user-permission android:name="android.permission.INTERNET"></user-permission>
+=======
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.avi.pecolx">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="true" />
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
+>>>>>>> d5953385b16bda9015458c654c0d451900433444
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
+        <activity android:name=".login">
+=======
+        <activity
+            android:name=".login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".signup"
             android:label="@string/title_activity_signup"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".sidebar"
-            android:label="PECOLX"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".login"
-            android:label="PECOLX"
-            android:screenOrientation="portrait"
+
             android:theme="@style/AppTheme.NoActionBar">
+>>>>>>> d5953385b16bda9015458c654c0d451900433444
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,49 +37,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".post_ad"
-            android:label="@string/title_activity_post_ad"
-            android:screenOrientation="portrait"
+<<<<<<< HEAD
+            android:name=".signactivity"
+            android:label="@string/title_activity_signactivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".json_ala_pnga"
-            android:label="@string/title_activity_json_ala_pnga"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            android:name=".buysellactivity"
+            android:label="@string/title_activity_buysellactivity"
+            android:theme="@style/AppTheme.NoActionBar"  />
+    </application>
 
 
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity
-            android:name=".display_listview"
-            android:label="@string/title_activity_display_listview"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Sign_up"
-            android:label="@string/title_activity_sign_up"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity
-            android:name=".imagetest"
-            android:label="@string/title_activity_imagetest"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".my_ads_displaylistview"
-            android:label="@string/title_activity_my_ads_displaylistview"
+=======
+            android:name=".sidebar"
+            android:label="@string/title_activity_sidebar"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
+>>>>>>> d5953385b16bda9015458c654c0d451900433444
 </manifest>

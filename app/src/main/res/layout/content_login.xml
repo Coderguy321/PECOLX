@@ -1,29 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
-    <!--<ScrollView-->
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            tools:context="com.example.avi.edittext_anim.MainActivity"/>
-    </android.support.design.widget.AppBarLayout>
-
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -37,47 +12,21 @@
     tools:context="com.example.avi.pecolx.login"
     tools:showIn="@layout/activity_login">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:id="@+id/mail" />
-    <EditText
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:id="@+id/pass"
-        android:layout_below="@+id/mail"
-        android:inputType="textPassword"/>
     <Button
-        android:layout_below="@+id/pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Login"
-        android:onClick="login"
-        android:id="@+id/button3"></Button>
+        android:onClick=""
+        android:text="login"
+        android:id="@+id/signup"
+        android:layout_marginBottom="170dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Sign up"
-        android:id="@+id/textView4"
-        android:clickable="true"
-        android:textColor="#e9070fe8"
-        android:textStyle="bold"
-        android:layout_marginTop="50dp"
-        android:layout_below="@+id/button3"
-        android:layout_toRightOf="@+id/button3"
-        android:layout_toEndOf="@+id/button3"
-        android:onClick="signup"/>
-
-
+        android:id="@+id/editText2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
-
-
-</android.support.design.widget.CoordinatorLayout>

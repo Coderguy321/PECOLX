@@ -2,11 +2,19 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
+<<<<<<< HEAD
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.example.aman.pecolx"
+        minSdkVersion 15
+=======
     buildToolsVersion "23.0.1"
 
     defaultConfig {
         applicationId "com.example.avi.pecolx"
         minSdkVersion 16
+>>>>>>> d5953385b16bda9015458c654c0d451900433444
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -24,5 +32,4 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
-    //compile 'com.mcxiaoke.volley:library:1.0.18'
 }

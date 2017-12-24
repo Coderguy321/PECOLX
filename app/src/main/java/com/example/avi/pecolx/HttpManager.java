@@ -24,7 +24,7 @@ public class HttpManager {
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod(requestPackage.getMethod());
 
-            if(requestPackage.getMethod().equals("GET")){
+            if(requestPackage.getMethod().equals("POST")){
                 connection.setDoOutput(true);
                 OutputStreamWriter outputStreamWriter = new OutputStreamWriter(connection.getOutputStream());
                 outputStreamWriter.write(requestPackage.getEncodedParams());
@@ -33,8 +33,7 @@ public class HttpManager {
             StringBuilder stringBuilder = new StringBuilder();
             bufferedReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String line;
-            while ((line = bufferedReader.readLine())!=null)
-            {
+            while ((line = bufferedReader.readLine())!=null){
                 stringBuilder.append(line);
             }
             return stringBuilder.toString();
@@ -51,4 +50,5 @@ public class HttpManager {
             }
         }
     }
+
 }
